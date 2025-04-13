@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "id": "f015",
+      "name": "pepsto",
+      "email": "test@gmail.com",
+      "password": "1234"
+    }
+  ],
+  "notes": [
+    {
+      "id": "f86c",
+      "title": "Тест Бележка",
+      "content": "Емм, да, таковата",
+      "userId": "f015"
+    }
+  ]
+}

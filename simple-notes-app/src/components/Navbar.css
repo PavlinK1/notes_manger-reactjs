@@ -1,0 +1,9 @@
+.navbar { background-color: #333; padding: 1rem 1.5rem; display: flex; justify-content: space-between; align-items: center; }
+.nav-logo { color: white; text-decoration: none; font-size: 1.6rem; font-weight: bold; }
+.nav-menu { list-style: none; display: flex; align-items: center; margin: 0; padding: 0; }
+.nav-item { margin-left: 1.5rem; }
+.nav-link { color: white; text-decoration: none; padding: 0.5rem 0; }
+.nav-link:hover { color: #00bfff; }
+.nav-greeting { color: #ccc; margin-right: 1.5rem; font-style: italic; }
+.nav-button-link { background: none; border: none; color: white; padding: 0.5rem 0; cursor: pointer; font-size: inherit; font-family: inherit; }
+.nav-button-link:hover { color: #ff4d4d; }

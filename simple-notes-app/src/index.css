@@ -1,0 +1,176 @@
+/* src/index.css */
+
+/* Основни настройки за шрифтове (от Vite) - можем да ги запазим */
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Основни стилове за линкове */
+a {
+  font-weight: 500;
+  color: #007bff; /* По-стандартно синьо */
+  text-decoration: none; /* Без подчертаване по подразбиране */
+}
+a:hover {
+  color: #0056b3;
+  text-decoration: underline; /* Подчертаване при hover */
+}
+
+/* Стилове за цялата страница */
+body {
+  margin: 0; /* Нулиране на margin */
+  padding: 0; /* Нулиране на padding */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Последователност от шрифтове */
+  background-color: #f0f2f5; /* Светло сив фон за страницата */
+  color: #333; /* Основен цвят на текста */
+}
+
+/* Стилове за заглавия */
+h1 {
+  font-size: 2em;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  color: #1a1a1a;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-top: 1.5rem; /* Повече разстояние над h2 */
+  margin-bottom: 1rem;
+  color: #1a1a1a;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+h3 {
+    font-size: 1.2em;
+    margin-bottom: 0.75rem;
+    color: #1a1a1a;
+}
+
+/* Контейнер за основното съдържание */
+.container {
+  max-width: 960px; /* Максимална ширина */
+  margin: 2rem auto; /* Центриране + отстояние отгоре/отдолу */
+  padding: 2rem; /* Повече вътрешно отстояние */
+  background-color: #ffffff; /* Бял фон */
+  border-radius: 8px; /* Заоблени ъгли */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08); /* Лека сянка */
+}
+
+/* --- Стилове за Форми --- */
+
+label {
+  display: block; /* Етикет на собствен ред */
+  margin-bottom: 6px; /* Разстояние под етикета */
+  color: #333333; /* Тъмно сив цвят за текст */
+  font-weight: bold; /* Получер шрифт */
+  font-size: 0.9rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  display: block; /* Поле на собствен ред */
+  width: calc(100% - 22px); /* Пълна ширина минус padding и border */
+  padding: 10px; /* Вътрешно отстояние */
+  margin-bottom: 15px; /* Разстояние под полето */
+  border: 1px solid #ccc; /* Стандартна рамка */
+  border-radius: 4px; /* Заоблени ъгли */
+  font-size: 1rem; /* Нормален размер на шрифта */
+  background-color: #fff; /* Бял фон */
+  color: #333; /* Тъмен текст */
+  line-height: 1.5; /* Височина на реда */
+}
+
+textarea {
+    min-height: 80px; /* Минимална височина */
+    resize: vertical; /* Позволи само вертикално оразмеряване */
+}
+
+/* По-добър фокус стил */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+  border-color: #007bff; /* Синя рамка при фокус */
+  outline: none; /* Премахни стандартния outline */
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2); /* Леко синьо сияние */
+}
+
+/* Разстояние под всеки div във формата */
+form div {
+    margin-bottom: 1rem;
+}
+
+/* --- Стилове за Бутони --- */
+button {
+  border-radius: 6px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #007bff; /* Основен син цвят */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.25s, border-color 0.25s;
+  margin-right: 0.5rem;
+  line-height: 1.5; /* Добави височина на реда */
+}
+
+button:hover {
+  background-color: #0056b3; /* По-тъмно синьо при hover */
+  border-color: #0056b3;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* --- Примерни Стилове за Бележки (от NotesPage) --- */
+.note-item {
+    border: 1px solid #eee;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    position: relative;
+    background-color: #fdfdfd;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+.note-item h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem; /* Намали разстоянието */
+}
+
+.note-delete-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #dc3545; /* Червено за триене */
+    color: white;
+    border: none;
+    border-radius: 50%; /* Кръгъл бутон */
+    cursor: pointer;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    font-size: 14px;
+    line-height: 24px; /* Центриране на 'X' */
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    transition: background-color 0.2s;
+}
+.note-delete-button:hover {
+    background: #c82333; /* По-тъмно червено */
+}

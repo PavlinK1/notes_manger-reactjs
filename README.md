@@ -50,7 +50,7 @@ src/
 
 ## 🔗 GitHub линк
 
-https://github.com/yourusername/your-repo-name
+https://github.com/PavlinK1/notes_manger-reactjs
 
 ## 🎓 Автор
 

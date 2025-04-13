@@ -17,7 +17,7 @@
 ## 🚀 Стартиране на проекта
 
 1. Клонирайте:
-git clone https://github.com/yourusername/your-repo-name.git
+git clone [https://github.com/yourusername/your-repo-name.git](https://github.com/PavlinK1/notes_manger-reactjs.git)
 
 2. Инсталирайте:
 npm install

@@ -43,4 +43,4 @@ npm run server
 
 Име: Павлин Кърчев  
 Факултетен номер: 165кнз
-LinkedIn: https://www.linkedin.com/in/pavlin-karchev-52452a206/
+[LinkedIn](https://www.linkedin.com/in/pavlin-karchev-52452a206/)

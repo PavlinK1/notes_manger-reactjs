@@ -34,7 +34,7 @@ src/
 ├── components/ - Login, Register, Navbar
 ├── pages/ - NotesPage (главна страница)
 ├── types/ - типове за данни
-├── App.tsx - маршрутизация и защита на рути
+├── App.tsx - маршрутизация
 └── main.tsx
 
 ## ✅ Покриване на критериите
